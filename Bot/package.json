@@ -1,0 +1,21 @@
+{
+  "name": "bot_nicehash_status",
+  "version": "0.0.9",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.27.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "bot",
+    "forward",
+    "usi"
+  ],
+  "author": "Konstantin Malyshev",
+  "license": "ISC"
+}
