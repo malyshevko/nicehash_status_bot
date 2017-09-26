@@ -21,11 +21,11 @@ setInterval(function() {
 function checkWorkerStatus(body){
 	var workers_response = body.result.workers;
 	if(workers_response.length < workers){
-		sendMessageInfoAllUser('worker dead');
+		sendMessageInfoAllUser('Один из воркеров упал');
 	}	
 	for(var i = 0; i < workers_response.length; i++){
 		if(workers_response[i][1].a <= 0){
-			sendMessageInfoAllUser('worker dead ' + workers_response[i][0]);
+			sendMessageInfoAllUser('Упал воркер: ' + workers_response[i][0]);
 		}
 	}
 }
