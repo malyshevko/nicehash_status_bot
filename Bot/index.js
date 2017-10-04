@@ -49,7 +49,7 @@ function sendMessageInfoAllUser(message){
 }
 function sendMessageUser(message,user){
 	bot.sendMessage(user,message);
-}
+} 
 function getWorkerInfo(body,user){
 	var workers_response = body.result.workers;
 	sendMessageUser('Worker launch: ' + workers_response.length,user);
