@@ -12,7 +12,7 @@ bot.on('message', (msg) => {
 var chatId = ['277615689'];
 var second = 350, the_interval = second * 1000;
 var url = "https://api.nicehash.com/api?method=";
-var workers = 3;
+var workers = 4;
 setInterval(function() {
 	getRequest("stats.provider.workers","addr=3QTNRyHTuriqTZfmeyAEgbSJNeybjA3sNj").then(result => checkWorkerStatus(result));
 }, the_interval);
