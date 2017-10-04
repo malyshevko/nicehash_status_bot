@@ -52,7 +52,7 @@ function sendMessageUser(message,user){
 }
 function getWorkerInfo(body,user){
 	var workers_response = body.result.workers;
-	sendMessageUser('Запущено воркеров: ' + workers_response.length,user);
+	sendMessageUser('Worker launch: ' + workers_response.length,user);
 	for(var i = 0; i < workers_response.length; i++){
 		sendMessageUser('Worker: ' + workers_response[i][0] + ' работает с хэшрейтом: ' + workers_response[i][1].a,user);
 	}
